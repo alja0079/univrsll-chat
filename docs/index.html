@@ -102,6 +102,7 @@
   .btn:hover { transform: translateY(-2px); }
   .btn:focus-visible { outline: 2px solid var(--emerald); outline-offset: 3px; }
   .cta small { color: var(--muted); font-size: 0.8rem; }
+  .btn-row { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
 
   .features {
     display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -145,8 +146,11 @@
       </div>
 
       <div class="cta">
-        <a class="btn" href="https://github.com/alja0079/univrsll-chat/releases/latest">Download free &mdash; Windows</a>
-        <small>First launch: click &ldquo;More info &rarr; Run anyway&rdquo; (new app, not code-signed yet).</small>
+        <div class="btn-row">
+          <a class="btn" href="https://github.com/alja0079/univrsll-chat/releases/download/v0.9.0/desktop-chat_0.9.0_x64-setup.exe">Download &mdash; Windows</a>
+          <a class="btn" href="https://github.com/alja0079/univrsll-chat/releases/download/v0.9.0/desktop-chat_0.9.0_universal.dmg">Download &mdash; macOS</a>
+        </div>
+        <small>Free &middot; Windows and Mac (Apple Silicon + Intel). First launch shows a one-time prompt &mdash; Windows: &ldquo;More info &rarr; Run anyway&rdquo; · Mac: right-click &rarr; Open.</small>
       </div>
     </div>
   </header>
